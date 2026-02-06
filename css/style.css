@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9f9ff;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-j{
+    font-size: 22px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a5cff, #ff4fd9);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border-bottom: 1px solid #6a5cff3a;
+    opacity: 0.8;
+    font-weight: normal;
+}
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 8%;
+}
+
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.circle {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.7;
+}
+
+.purple {
+    background: #6a5cff63;
+    top: -100px;
+    left: -100px;
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 150px;
+}
+
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h4 {
+    margin-bottom: 20px;
+    color: #111;
+    background: linear-gradient(135deg, #6a5cff18, #ff4fd913);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom: 1px solid #6a5cff3a;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.hero-text h1 span {
+    background: linear-gradient(135deg, #6a5cff, #ff4fd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.6;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.btn-hero {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6a5cff, #ff4fd8);
+    box-shadow: 0 5px 30px rgba(106, 92, 255, 0.35);
+    transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 40px rgba(255, 79, 216, 0.45);
+}
+
+
+.hero-image {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    position: relative;
+    z-index: 2;
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(30px);
+    opacity: 0.6;
+    animation: float 3s ease-in-out infinite;
+}
+.shape-1 {
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(135deg, #6a5cffba, #ff4fd9b5);
+    top: 20px;
+    left: -100px;
+}
+.shape-2 {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, #00e1ffb0, #6a5cffbb);
+    bottom: -30px;
+    right: -40px;
+    animation-delay: 2s;
+}
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, -30px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.about {
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+
+.about-container h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #6a5cff, #ff4fd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    opacity: 0.6;
+}
