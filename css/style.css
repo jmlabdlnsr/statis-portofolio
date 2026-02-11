@@ -45,6 +45,7 @@ body {
 .logo {
     font-size: 22px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .nav-menu {
