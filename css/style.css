@@ -132,11 +132,22 @@ body {
     color: #111;
 }
 
-.hero-text h1 span {
+#typing-text {
     background: linear-gradient(135deg, #6a5cff, #ff4fd8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    border-right: 2px solid #6a5cff;
+    padding-right: 5px;
+    animation: blink 0.8s infinite;
 }
+
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: #6a5cff; }
+    100% { border-color: transparent; }
+}
+
 
 .hero-text p {
     font-size: 18px;
